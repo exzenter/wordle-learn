@@ -1,5 +1,6 @@
 // Game Configuration
-const ARML_API_KEY = 'arMK1P8340cda7cc1a12cf4664-arml-FP';
+// API key loaded from config.js (local) or environment variable (deployed)
+const ARML_API_KEY = typeof CONFIG !== 'undefined' ? CONFIG.ARML_API_KEY : '__API_KEY__PLACEHOLDER__';
 const ARML_API_URL = 'https://arml.trymagic.xyz/';
 const WORD_LENGTH = 5;
 const MAX_GUESSES = 6;

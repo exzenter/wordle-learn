@@ -24,6 +24,9 @@ node_modules/
 .env.local
 .env.*.local
 
+# Config file with API keys
+config.js
+
 # Python cache (if using Python server)
 __pycache__/
 *.py[cod]
