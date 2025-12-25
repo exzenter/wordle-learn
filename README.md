@@ -68,6 +68,7 @@ wordle-learn/
 ├── index.html          # Haupt-HTML-Datei
 ├── style.css           # Styling und Animationen
 ├── script.js           # Spiellogik & API-Integration
+├── words.js            # Offizielle Wordle-Wortlisten (~14.855 Wörter)
 ├── README.md           # Diese Datei
 └── .gitignore          # Git-Ausschlüsse
 ```
@@ -82,14 +83,19 @@ wordle-learn/
 
 ## 🔧 Anpassung
 
-### Eigene Wortliste
+### Wortlisten
 
-Bearbeite die `WORD_LIST` in `script.js`:
-```javascript
-const WORD_LIST = [
-    'APPLE', 'BRAIN', 'CHAIR', // ... deine Wörter
-];
-```
+Das Spiel verwendet zwei Listen aus `words.js`:
+
+**ANSWER_WORDS** (~2.315 Wörter)
+- Häufige, bekannte Wörter die als Lösungen verwendet werden
+- Sorgt für eine faire Spielerfahrung
+
+**WORD_LIST** (~14.855 Wörter)  
+- Alle gültigen 5-Buchstaben-Wörter für die Eingabevalidierung
+- Erlaubt auch seltene Wörter beim Raten
+
+Beide Listen stammen aus den offiziellen NYT Wordle-Wortlisten.
 
 ### API-Key ändern
 
